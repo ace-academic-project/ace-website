@@ -18,3 +18,7 @@ Academic group project developed using HTML, CSS, JavaScript, PHP, and MySQL.
 3. Start Apache and MySQL in XAMPP
 4. Import ace.sql into phpMyAdmin
 5. Open localhost/Ace-Website
+
+## Test Login
+Email: test@email.com
+Password: test1234
