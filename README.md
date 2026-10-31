@@ -20,5 +20,5 @@ Academic group project developed using HTML, CSS, JavaScript, PHP, and MySQL.
 5. Open localhost/Ace-Website
 
 ## Test Login
-Email: test@email.com
-Password: test1234
+- Email: test@email.com
+- Password: test1234
