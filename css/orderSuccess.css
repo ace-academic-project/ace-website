@@ -1,0 +1,78 @@
+        .success-box {
+            background: white;
+            width: 450px;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+
+            margin: 150px auto;
+            position: relative;
+            left: auto;
+            top: auto;
+            transform: none;
+        }
+
+        .tick {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #28a745;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .success-box h1 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .success-box p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .details {
+            text-align: left;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .details div {
+            display: flex;
+            justify-content: space-between;
+            margin: 12px 0;
+        }
+
+        .value {
+            font-weight: bold;
+        }
+
+        .home-btn {
+            display: inline-block;
+            width: 60%;
+            height: 45px;
+            line-height: 45px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .home-btn:hover {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+        }

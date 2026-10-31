@@ -1,0 +1,129 @@
+ .box {
+            width: 200px;
+            height: 350px;
+            border: 2px solid darkgrey;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            position: relative;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+ }
+ .container {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 2px solid darkgrey;
+        }
+
+.personalise_button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: 2px solid darkgrey;
+            border-radius: 100px;
+            cursor: pointer;
+            position: relative;
+            align-items: center;
+        }
+.personalise {
+            width: 500px;
+            height: 500px;
+            border: 2px solid darkgrey;
+            background-color: lightgrey;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+.step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border: 2px solid darkgrey;
+        }
+
+.text {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+ .step_container {
+            display: flex;
+            gap: 20px;
+            position: relative;
+        }
+.text_container {
+            display: flex;
+            gap: 250px;
+        }
+
+.price_text {
+            position: relative;
+            font-size: 18px;
+            font-weight: bold;
+        }
+.choose_text {
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+            color: red;
+            bottom: 30px;
+        }
+
+.bottle_colour {
+            width: 200px;
+            height: 350px;
+            border: 2px solid darkgrey;
+            color: white;
+            padding: 10px;
+            position: relative;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+ }
+
+ .colour {
+            width: 40px;
+            height: 40px;
+            border: 2px solid darkgrey;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+.color_container {
+            display: flex;
+            gap: 20px;
+            position: relative;
+            bottom: 20px;
+        }
+
+.red {
+            background-color: red;
+        }
+.blue {
+            background-color: blue;
+        }
+.green {
+            background-color: green;
+        }
+.yellow {
+            background-color: yellow;
+        }
+.purple {
+            background-color: purple;
+        }

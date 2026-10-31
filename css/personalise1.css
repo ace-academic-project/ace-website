@@ -1,0 +1,157 @@
+.bottle-display {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.bottle-display img {
+    width: 115%;
+    height: 110%;
+    object-fit: contain; 
+}
+.cap-display {
+    position: absolute;
+    top: 28%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.cap-display img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.personalise-box {
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+.design-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+
+.colour-btn {
+    color: white;
+    border: none;
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.cap-btn {
+    color: white;
+    border: none;
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.icon-btn {
+    color: black;
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    cursor: pointer;
+    object-fit: contain;
+    border: 2px solid black; 
+}
+
+.icon-btn img {
+    max-width: 25px;
+    aspect-ratio: 1/1;
+}
+
+.icon-display {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.icon-display img {
+    width: 115%;
+    height: 110%;
+    object-fit: contain;
+    display: none;
+}
+
+.addCart {
+    width: 530px;
+    max-width: 100%;
+    height: 60px;
+
+    background: transparent;
+    border: 3px solid #4a4a4a;
+
+    border-radius: 50px;
+
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.addCart:hover{
+    background-color: #4a4a4a;
+    color: white;
+}
+
+
+p {
+   font-size: 16px;
+    color: #333;
+    font-weight: 600; 
+}
+
+.price{
+    position: relative;
+    right: 30%;
+}
+
+.cart-message {
+    opacity: 0;
+    position: absolute;
+    left: 74.5%;
+    top:350px;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #28a745;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.cart-message.show {
+    opacity: 1;
+}

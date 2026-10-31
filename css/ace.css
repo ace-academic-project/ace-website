@@ -1,0 +1,421 @@
+
+#slideshow {
+    width: 100%;
+    position: relative;
+}
+
+#slide {
+    width: 100%;
+    height:auto;
+    display: block;
+}
+
+.previous-btn,
+.next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    background-color: #00000026;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border: none;
+    user-select: none;
+
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #00000066;
+}
+
+.product-heading-container {
+    display: flex;
+    /* min-height: 50px; */
+    height: 190px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.product-heading{
+    text-align: center;
+    /* margin-top: 100px; */
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.bottles-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+ .first-bottle img {
+  width: 89%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  margin: 0px auto 0 55px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.second-bottle img {
+  width: 82%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  margin: 0px auto 0 55px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.third-bottle img {
+  width: 90%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  margin: 0px auto 0 55px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+
+.steps-rectangle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       /* Centers image and text vertically */
+  gap: clamp(16px,3vw,30px);                 /* Adds space between image and text */
+  width: 90%; 
+  max-width: 1100px;
+  margin: 40px auto;          /* Centers the entire box on the page */
+  padding: clamp(16px,3vw,30px);
+  background-color: whitesmoke;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
+.image-steps {
+  width: 100%;
+  max-width: 320px;              
+  height: clamp(220px,30vw,380px);              
+  object-fit: cover;          /* Prevents image from stretching or distorting */
+  border-radius: 10px;
+  flex-shrink: 0;        
+}
+
+
+.steps-content {
+  flex: 1;                    /* Takes up all remaining space on the right */
+  width: 100%;
+}
+
+.steps-heading {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: clamp(22px,2.5vw,30px);
+  color: black;
+  margin-top: 0;
+  margin-bottom: clamp(20px,4vw,50px);
+}
+
+
+.steps {
+  list-style: none;           /* Removes standard small numbers */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 16px;                  /* Space between each dark blue step box */
+}
+
+
+.stepnum {
+  display: block;
+  width: 100%;
+  padding-block: clamp(12px,1.5vw,16px); 
+  padding-inline: clamp(16px,2vw,24px);
+  background-color: #003153;  /* Dark navy color */
+  color: white;
+  border-radius: 10px;        /* Smooth rounded corners */
+  font-family: "Cambria", serif;
+  font-size: clamp(16px,1.8vw,20px);
+  font-weight: 600;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.clickable-link{
+  text-decoration: none ;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+.getstarted-rectangle{
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.getstarted-image{
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.getstarted-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.getstarted{
+  color: white;
+  font-size: clamp(50px,10vw,70px);
+  font-family: "League Spartan",sans-serif;
+  margin: 0 0 20px 0;
+  
+}
+
+.click-here{
+  display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+.clickable-link:hover .click-here{
+  background-color: white;
+  color: black;
+}
+
+.faq-box {
+  position: relative; /* Required for the background opacity layer */
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 60px; 
+  padding-left: 20px;
+}
+
+/* Background image layer with opacity */
+.faq-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/Images/faq-pics3.jpg'); 
+  background-size: cover;
+  background-position: right;
+  z-index: -1; /* Keeps the background behind your content */
+}
+
+/* Centered Outer Container */
+.faq-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-header{
+  color:whitesmoke;
+  text-align: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.faq-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.faq-item {
+  background-color: #003153;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+/* Question Header */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Chevron Down Arrow Icon */
+.faq-chevron {
+  color: white;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+/* Flip Chevron when active */
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Answer Container & Transition */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.faq-answer-content {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px; 
+  padding-left: 20px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+
+  .faq-box{
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 40px; 
+  padding-left: 10px;
+  }
+
+  .faq-box::before{
+    background-position: center;
+  }
+
+  .faq-header{
+    font-size: 26px;
+  }
+
+  .faq-question{
+    font-size: 18px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 14px; 
+    padding-left: 14px;
+  }
+
+  .faq-answer-content{
+    font-size: 15px;
+    padding-top: 0px;
+    padding-right: 14px;
+    padding-bottom: 16px; 
+    padding-left: 14px;
+  }
+
+  .faq-item{
+    border-radius: 18px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+    .bottles-imgs {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important; /* Adds space between the stacked bottles */
+    }
+
+    .bottle-box{
+      width: 80% !important;
+      margin: 0 auto !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+
+    .getstarted-rectangle{
+    height: 300px;
+    }
+
+    .getstarted-image{
+      height: 280px;
+    }
+
+  .click-here{
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 18px; 
+  padding-left: 18px;
+  font-size: 18px;
+  }
+
+  .steps-rectangle{
+    flex-direction: column;
+  }
+
+  .image-steps{
+    max-width: 100%;
+  }
+  .product-heading{
+    color: #003153;
+  }
+
+  .faq-header{
+    font-size: 22px;
+  }
+
+  .faq-question{
+    font-size: 16px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-bottom: 12px; 
+    padding-left: 12px;
+  }
+
+  .faq-answer-content{
+    font-size: 14px;
+    padding-top: 0px;
+    padding-right: 12px;
+    padding-bottom: 14px; 
+    padding-left: 12px;
+  }
+
+}
+
+
+
+
+  
+                

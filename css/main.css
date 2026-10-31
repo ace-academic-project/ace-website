@@ -1,0 +1,305 @@
+body {
+      margin: 0;
+      padding: 0;
+     }
+
+body.no-scroll {
+  overflow: hidden;
+}
+     
+  .menu_bar { 
+    height: 80px; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    background-color:#535b62 ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+  } 
+
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    margin-left: auto; 
+    margin-right: 80px; 
+    align-items: center; 
+    gap: 50px; 
+}
+
+.nav-item { 
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative; 
+}
+
+.nav-link { 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+    transition: all 0.7s; 
+}
+
+.nav-link:hover {
+    text-decoration: underline !important;
+}
+
+.login-dropdown{
+  position: relative;
+}
+
+.login-dropdown .dropdown_menu { 
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    background-color: #535b62; 
+    z-index: 10;
+    min-width: 150px;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.login-dropdown .dropdown_menu ul { 
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+} 
+
+.login-dropdown .dropdown_menu li a {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.login-dropdown .dropdown_menu li a:hover {
+    text-decoration: underline;
+}
+
+.login-dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.dropdown-menu { 
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    top: 100%; 
+    background-color: #535b62; 
+    z-index: 2;
+}
+
+.dropdown-list { 
+    display: block; 
+    list-style: none;
+    margin: 10px; 
+    padding: 0;
+} 
+
+.dropdown-option{
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-item { 
+    width: 150px; 
+    padding: 10px; 
+} 
+
+.dropdown-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dropdown-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+     
+.acelogo { 
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 42px;
+
+ } 
+
+.hamburger{
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+
+.website-footer{
+  background-color: whitesmoke;
+  color: #333333;
+  padding: 60px 20px 30px 20px;
+}
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-content{
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-content h3{
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: #0b1c3c;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-content ul{
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container ul li{
+  margin-bottom: 12px;
+}
+
+.footer-container ul li a{
+  text-decoration: none;
+  color: #444444;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-container ul li a:hover {
+  color: #0b1c3c;
+  text-decoration: underline;
+}
+.contact-label{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact-value{
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #555555;
+  margin-bottom: 16px;
+}
+
+.footer-bottom{
+  max-width: 1200px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.footer-bottom img{
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.login-dropdown .dropdown_menu {
+  left: auto;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+
+  .hamburger{
+    display: block !important;
+  }
+
+  .menu_bar ul.nav-links{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: whitesmoke;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 0; 
+    padding-left: 0;
+    z-index: 1000;
+    gap:16px;
+  }
+
+  .menu_bar ul.nav-links.show-menu {
+    display: flex !important;
+  }
+
+  .menu_bar ul li {
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px; 
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .menu_bar ul.nav-links li a {
+    color: black;
+  }
+
+  .dropdown_menu {
+    position: static;
+    background-color: whitesmoke;
+    display: none;
+  }
+
+  .dropdown_menu ul li a {
+    color: black
+  }
+
+  .menu_bar ul li.dropdown.show-dropdown.dropdown_menu{
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footer-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .website-footer {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+}
